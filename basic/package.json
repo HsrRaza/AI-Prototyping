@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@openai/agents": "^0.11.4",
+    "@openrouter/agent": "^0.7.0",
+    "dotenv": "^17.4.2",
+    "openai": "^6.38.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1"
+  },
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
