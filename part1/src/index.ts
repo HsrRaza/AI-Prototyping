@@ -18,12 +18,22 @@ async function run() {
                 role: "user",
                 content: "Hello , How are you"
 
+            },
+            {
+                role: 'assistant',
+                content: "I am doing great , Thank you ! How can i assist you"
+
+            },
+            {
+                role: 'system',
+                content: "You are a helpfull assistant that provide information"
+
             }
 
         ]
     })
 
-    console.log(response.choices[0].message.content)
+    console.log(response.choices[0])
 
 
 }
