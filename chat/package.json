@@ -19,6 +19,7 @@
   "devDependencies": {
     "@types/dotenv": "^6.1.1",
     "@types/node": "^26.0.1",
+    "@types/prompt-sync": "^4.2.3",
     "ts-node": "^10.9.2",
     "tsc": "^2.0.4",
     "tsx": "^4.22.4",
