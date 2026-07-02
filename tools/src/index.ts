@@ -11,14 +11,26 @@ const openai = new OpenAI({
 })
 
 
-const context = [
+
+
+async function callOpenAITools() {
+
+    const context :OpenAI.ChatCompletionMessageParam[] = [
     { role:"system", content:"You are a helpfull assistant"},
     {role: "user", content:"what is current time in new york"}
 ]
-async function callOpenAITools() {
+    
+    
+    
     const response  = await openai.chat.completions.create({
         model:"gpt-3.5-turbo",
         messages: context
     })
+
+
+    console.log(response.choices[0]?.message.content);
+    
     
 }
+
+callOpenAITools()
