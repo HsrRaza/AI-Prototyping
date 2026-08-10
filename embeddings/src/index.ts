@@ -114,7 +114,7 @@ async function run() {
   }
 
 
-  const similarFruits = similaritySearch(fruitsWithEmbeddings, targetFruit);
+  const similarFruits = similaritySearch(fruitsWithEmbeddings ,targetFruit);
   
   console.log("Similar Fruits to Apple: ", `${similarFruits}`);
 
